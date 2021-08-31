@@ -1,2 +1,4 @@
 # used to generate /requirements.txt - add cli/sdk dependencies here
 click
+jupytext
+pyyaml

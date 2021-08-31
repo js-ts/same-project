@@ -7,7 +7,10 @@
 astroid==2.7.2
     # via pylint
 attrs==21.2.0
-    # via pytest
+    # via
+    #   jsonschema
+    #   markdown-it-py
+    #   pytest
 click==8.0.1
     # via
     #   -r requirements.in
@@ -16,12 +19,30 @@ coverage==5.5
     # via pytest-cov
 iniconfig==1.1.1
     # via pytest
+ipython-genutils==0.2.0
+    # via
+    #   nbformat
+    #   traitlets
 isort==5.9.3
     # via pylint
+jsonschema==3.2.0
+    # via nbformat
+jupyter-core==4.7.1
+    # via nbformat
+jupytext==1.11.4
+    # via -r requirements.in
 lazy-object-proxy==1.6.0
     # via astroid
+markdown-it-py==1.1.0
+    # via
+    #   jupytext
+    #   mdit-py-plugins
 mccabe==0.6.1
     # via pylint
+mdit-py-plugins==0.2.8
+    # via jupytext
+nbformat==5.1.3
+    # via jupytext
 packaging==21.0
     # via pytest
 pep517==0.11.0
@@ -38,19 +59,32 @@ pylint==2.10.2
     # via -r requirements-dev.in
 pyparsing==2.4.7
     # via packaging
+pyrsistent==0.18.0
+    # via jsonschema
 pytest==6.2.4
     # via
     #   -r requirements-dev.in
     #   pytest-cov
 pytest-cov==2.12.1
     # via -r requirements-dev.in
+pyyaml==5.4.1
+    # via
+    #   -r requirements.in
+    #   jupytext
+six==1.16.0
+    # via jsonschema
 toml==0.10.2
     # via
+    #   jupytext
     #   pylint
     #   pytest
     #   pytest-cov
 tomli==1.2.1
     # via pep517
+traitlets==5.0.5
+    # via
+    #   jupyter-core
+    #   nbformat
 wheel==0.37.0
     # via pip-tools
 wrapt==1.12.1
